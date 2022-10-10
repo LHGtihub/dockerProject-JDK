@@ -2,6 +2,8 @@
 FROM ubuntu
 #作者
 MAINTAINER LH
+#指定字符集很重要
+ENV  LANG C.UTF-8
 #执行命令
 RUN apt-get update
 RUN apt-get install vim -y
